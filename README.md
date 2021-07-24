@@ -1,2 +1,2 @@
 # formato-data-brasileiro
-Formatar uma data para pdrão brasileiro
+Formatar uma data para pdrão brasil
