@@ -12,14 +12,13 @@ const { mixedDateToDateString, mixedDateToDatetimeString } = require('formato-da
 ```
 ou 
 ```
-import { mixedDateToDateString }  from "formato-data-brasileiro/index";
+import { mixedDateToDateString, mixedDateToDateString }  from "formato-data-brasileiro/index";
 ```
 
 ```
 const date = new Date('2021-07-24 00:00:00');
 
-let data = DateUtilsFormatBrazilian.mixedDateToDateString(date) //data convertida DD/MM/AAAA
+let data = mixedDateToDateString(date) //data convertida DD/MM/AAAA
 
-let dataComMinutos = DateUtilsFormatBrazilian.mixedDateToDatetimeString(date) //data convertida DD/MM/AAAA HH:MM::SS
-
+let dataComMinutos = mixedDateToDatetimeString(date) //data convertida DD/MM/AAAA HH:MM::SS
 ```
