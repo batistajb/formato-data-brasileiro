@@ -1,8 +1,8 @@
 {
   "name": "formato-data-brasileiro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Formatar uma data passada por parâmetro(se não passar retorna a data atual) para o padrão brasileiro \"DD/MM/AAAA\"",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "jest tests"
   },

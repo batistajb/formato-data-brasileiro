@@ -14,6 +14,6 @@ const date = new Date('2021-07-24 00:00:00');
 
 let data = DateUtilsFormatBrazilian.mixedDateToDateString(date) //data convertida DD/MM/AAAA
 
-let dataCOmMinutos = DateUtilsFormatBrazilian.mixedDateToDatetimeString(date) //data convertida DD/MM/AAAA HH:MM::SS
+let dataComMinutos = DateUtilsFormatBrazilian.mixedDateToDatetimeString(date) //data convertida DD/MM/AAAA HH:MM::SS
 
 ```
