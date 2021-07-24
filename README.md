@@ -8,7 +8,7 @@ npm i formato-data-brasileiro
 ```
 
 ```
-const { DateUtilsFormatBrazilian } = require('formato-data-brasileiro');
+const { mixedDateToDateString, mixedDateToDatetimeString } = require('formato-data-brasileiro/index');
 
 const date = new Date('2021-07-24 00:00:00');
 

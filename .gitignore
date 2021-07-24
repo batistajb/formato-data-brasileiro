@@ -1,4 +1,5 @@
 # Logs
+/node-modules/
 logs
 *.log
 package-lock.json
