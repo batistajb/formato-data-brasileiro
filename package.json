@@ -1,0 +1,25 @@
+{
+  "name": "formato-data-brasileiro",
+  "version": "1.0.1",
+  "description": "Formatar uma data passada por parâmetro(se não passar retorna a data atual) para o padrão brasileiro \"DD/MM/AAAA\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/batistajb/formato-data-brasileiro.git"
+  },
+  "author": "João Batista <batistadasilvaalvesjoao@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/batistajb/formato-data-brasileiro/issues"
+  },
+  "homepage": "https://github.com/batistajb/formato-data-brasileiro#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
+}
