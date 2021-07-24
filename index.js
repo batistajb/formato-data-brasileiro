@@ -1,33 +1,17 @@
-export class DateUtilsFormatBrazilian {
-
-    // -------------------------------------------------------------------------
-    // Public Static Methods
-    // -------------------------------------------------------------------------
-
-    /**
-     * Normalizes date object hydrated from the database.
-     */
-    static normalizeHydratedDate(mixedDate: Date|string|undefined): Date|string|undefined {
-        if (!mixedDate)
-            return mixedDate;
-
-        return typeof mixedDate === "string" ? new Date(mixedDate) : mixedDate as Date;
-    }
-
+class DateUtilsFormatBrazilian {
     /**
      * Converts given value into date string in a "DD/MM/YYYY" format.
      */
-    static mixedDateToDateString(value: Date|any): string|any {
+    mixedDateToDateString(value) {
         if (value instanceof Date)
             return  this.formatZerolessValue(value.getDate()) + "/" + this.formatZerolessValue(value.getMonth() + 1) + "/" + this.formatZerolessValue(value.getFullYear());
 
         return value;
     }
-
     /**
      * Converts given value into date object.
      */
-    static mixedDateToDate(mixedDate: Date|string, toUtc: boolean = false, useMilliseconds = true): Date {
+    mixedDateToDate(mixedDate, toUtc = false, useMilliseconds = true) {
         let date = typeof mixedDate === "string" ? new Date(mixedDate) : mixedDate;
 
         if (toUtc)
@@ -50,7 +34,7 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts given value into time string in a "HH:mm:ss" format.
      */
-    static mixedDateToTimeString(value: Date|any, skipSeconds: boolean = false): string|any {
+    mixedDateToTimeString(value, skipSeconds = false) {
         if (value instanceof Date)
             return this.formatZerolessValue(value.getHours()) +
                 ":" + this.formatZerolessValue(value.getMinutes()) +
@@ -62,7 +46,7 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts given value into time string in a "HH:mm:ss" format.
      */
-    static mixedTimeToDate(value: Date|any): string|any {
+    mixedTimeToDate(value){
         if (typeof value === "string") {
             const [hours, minutes, seconds] = value.split(":");
             const date = new Date();
@@ -81,7 +65,7 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts given string value with "-" separator into a "HH:mm:ss" format.
      */
-    static mixedTimeToString(value: string|any, skipSeconds: boolean = false): string|any {
+    mixedTimeToString(value, skipSeconds = false) {
         value = value instanceof Date ? (value.getHours() + ":" + value.getMinutes() + (!skipSeconds ? ":" + value.getSeconds() : "")) : value;
         if (typeof value === "string") {
             return value.split(":")
@@ -95,7 +79,7 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts given value into datetime string in a "DD/MM/YYYY HH-mm-ss" format.
      */
-    static mixedDateToDatetimeString(value: Date|any): string|any {
+    mixedDateToDatetimeString(value) {
         if (typeof value === "string") {
             value = new Date(value);
         }
@@ -115,7 +99,7 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts given value into utc datetime string in a "DD-MM-YYY HH-mm-ss" format.
      */
-    static mixedDateToUtcDatetimeString(value: Date|any): string|any {
+    mixedDateToUtcDatetimeString(value) {
         if (typeof value === "string") {
             value = new Date(value);
         }
@@ -135,9 +119,9 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts each item in the given array to string joined by "," separator.
      */
-    static simpleArrayToString(value: any[]|any): string[]|any {
+    simpleArrayToString(value){
         if (value instanceof Array) {
-            return (value as any[])
+            return (value)
                 .map(i => String(i))
                 .join(",");
         }
@@ -148,7 +132,7 @@ export class DateUtilsFormatBrazilian {
     /**
      * Converts given string to simple array split by "," separator.
      */
-    static stringToSimpleArray(value: string|any): string|any {
+    stringToSimpleArray(value){
         if (value instanceof String || typeof value === "string") {
             if (value.length > 0) {
                 return value.split(",");
@@ -160,32 +144,27 @@ export class DateUtilsFormatBrazilian {
         return value;
     }
 
-    static simpleJsonToString(value: any): string {
+    simpleJsonToString(value) {
         return JSON.stringify(value);
     }
 
-    static stringToSimpleJson(value: any) {
+    stringToSimpleJson(value) {
         return typeof value === "string" ? JSON.parse(value) : value;
     }
-
-    // -------------------------------------------------------------------------
-    // Private Static Methods
-    // -------------------------------------------------------------------------
 
     /**
      * Formats given number to "0x" format, e.g. if it is 1 then it will return "01".
      */
-    private static formatZerolessValue(value: number): string {
+    formatZerolessValue(value){
         if (value < 10)
             return "0" + value;
 
         return String(value);
     }
-
     /**
      * Formats given number to "0x" format, e.g. if it is 1 then it will return "01".
      */
-    private static formatMilliseconds(value: number): string {
+    formatMilliseconds(value){
         if (value < 10) {
             return "00" + value;
         } else if (value < 100) {
@@ -194,5 +173,7 @@ export class DateUtilsFormatBrazilian {
             return String(value);
         }
     }
-
 }
+
+
+exports.DateUtilsFormatBrazilian  = new DateUtilsFormatBrazilian;

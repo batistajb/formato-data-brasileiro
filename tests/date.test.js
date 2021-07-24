@@ -1,4 +1,4 @@
-import { DateUtilsFormatBrazilian } from "../DateUtilsFormatBrazilian";
+const { DateUtilsFormatBrazilian } = require('../index');
 
 test('Format 2021-07-24 to 24/07/2021', () => {
     const data = new Date('2021-07-24 00:00:00');

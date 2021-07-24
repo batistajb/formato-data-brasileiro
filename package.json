@@ -1,8 +1,9 @@
 {
   "name": "formato-data-brasileiro",
-  "version": "1.0.2",
-  "description": "Formatar uma data passada por parâmetro(se não passar retorna a data atual) para o padrão brasileiro \"DD/MM/AAAA\"",
-  "main": "index.ts",
+  "version": "1.0.4",
+  "description": "Formatar uma data passada por parâmetro para o padrão brasileiro \"DD/MM/AAAA\"",
+  "main": "index.js",
+  "preferGlobal": true,
   "scripts": {
     "test": "jest tests"
   },
@@ -17,9 +18,6 @@
   },
   "homepage": "https://github.com/batistajb/formato-data-brasileiro#readme",
   "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "jest": "^27.0.6",
-    "ts-jest": "^27.0.4",
-    "typescript": "^4.3.5"
+    "jest": "^27.0.6"
   }
 }
