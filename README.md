@@ -3,7 +3,7 @@ Package Help para formatar uma data passada por parâmetro para o padrão brasil
 
 
 ```
-npm i formato-data-brasileiro
+$ npm i formato-data-brasileiro
 
 ```
 
@@ -21,4 +21,11 @@ const date = new Date('2021-07-24 00:00:00');
 let data = mixedDateToDateString(date) //data convertida DD/MM/AAAA
 
 let dataComMinutos = mixedDateToDatetimeString(date) //data convertida DD/MM/AAAA HH:MM::SS
+```
+
+Teste com Jest
+
+```
+# unit tests
+$ npm run test
 ```
