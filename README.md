@@ -3,7 +3,7 @@ Package Help para formatar uma data passada por parâmetro para o padrão brasil
 
 
 ```
-$ npm i formato-data-brasileiro
+$ npm i @batistajb/formato-data-brasileiro
 
 ```
 
