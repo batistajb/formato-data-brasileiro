@@ -1,11 +1,14 @@
 {
   "name": "@batistajb/formato-data-brasileiro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Formatar uma data passada por parâmetro para o padrão brasileiro \"DD/MM/AAAA\"",
   "main": "index.js",
   "preferGlobal": true,
   "scripts": {
     "test": "jest tests"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "formatar",
@@ -17,9 +20,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/batistajb/formato-data-brasileiro.git"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
   },
   "author": "João Batista <batistadasilvaalvesjoao@gmail.com>",
   "license": "ISC",
