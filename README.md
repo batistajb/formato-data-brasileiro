@@ -8,11 +8,11 @@ $ npm i @batistajb/formato-data-brasileiro
 ```
 
 ```
-const { mixedDateToDateString, mixedDateToDatetimeString } = require('formato-data-brasileiro/index');
+const { mixedDateToDateString, mixedDateToDatetimeString } = require('@batistajb/formato-data-brasileiro');
 ```
 ou 
 ```
-import { mixedDateToDateString, mixedDateToDateString }  from "formato-data-brasileiro/index";
+import { mixedDateToDateString, mixedDateToDateString }  from "@batistajb/formato-data-brasileiro";
 ```
 
 ```
