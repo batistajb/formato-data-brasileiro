@@ -1,4 +1,4 @@
-# Formatar Data para Padrão Brasileiro
+# Formatar Data para Padrão Brasileiro ![npm](https://img.shields.io/npm/v/@batistajb/formato-data-brasileiro?label=vers%C3%A3o)
 Package Help para formatar uma data passada por parâmetro para o padrão brasileiro "DD/MM/AAAA"
 
 
