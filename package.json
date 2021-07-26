@@ -1,6 +1,6 @@
 {
   "name": "@batistajb/formato-data-brasileiro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Formatar uma data passada por parâmetro para o padrão brasileiro \"DD/MM/AAAA\"",
   "main": "index.js",
   "preferGlobal": true,
