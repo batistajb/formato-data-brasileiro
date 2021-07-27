@@ -1,4 +1,4 @@
-# Formatar Data para Padrão Brasileiro ![npm](https://img.shields.io/npm/v/@batistajb/formato-data-brasileiro?label=vers%C3%A3o)
+# Formatar Data para Padrão Brasileiro ![npm](https://img.shields.io/npm/v/@batistajb/formato-data-brasileiro?label=vers%C3%A3o) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/batistajb/formato-data-brasileiro/Node.js%20Package?label=GitHub%20Actions&logo=github)
 Package Help para formatar uma data passada por parâmetro para o padrão brasileiro "DD/MM/AAAA"
 
 
